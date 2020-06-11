@@ -1,24 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { experience, technologies, socials, education } from './data.js'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+      <h1>Lewis Dick</h1>
+      
+      <h4>Experience</h4>
+      <ul id="experience">
+        { Object.keys(experience).map((job) => <li>{job}<span className="experience-date">{experience[job]}</span></li>) }
+      </ul>
+
+      <h4 id="education">Education</h4>
+      <ul>
+      { education.map((pos) => <li>{pos}</li>) }
+      </ul>
+
+      <h4>Technologies</h4>
+      <ul id="technologies">
+        { technologies.map((tech) => <li>{tech}</li>) }
+      </ul>
+      
+      {/* Projects Currently Listening*/}
+    
+      <ul id="socials">
+        { Object.keys(socials).map((social) => <li><a href={socials[social]}>{social}</a></li>) }
+      </ul>
+      </div>
     </div>
   );
 }
