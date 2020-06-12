@@ -72,9 +72,10 @@ h3 {
   padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 380px) {
   #technologies {
     max-height: 60px;
+    padding-left: 0rem;
   }
 
   #socials {
@@ -89,7 +90,7 @@ h3 {
 
     ul {
       li {
-        padding-left: 0.5rem;
+        padding-left: 0rem;
       }
     }
   }
