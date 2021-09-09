@@ -10,7 +10,7 @@ export const technologies = [
 ]
 
 export const experience: Record<string, string> = {
-  'Software Engineer at OVO': 'Mar 2020 - Current',
+  'Software Engineer at Kaluza': 'Mar 2020 - Current',
   'Software Engineer at Craneware': 'Jul 2019 - Mar 2020',
 }
 
