@@ -71,8 +71,28 @@ export const photos = [
     height: 1866,
   },
   {
+    src: 'https://lewisdick.com/photography/DSCF2681.jpg',
+    width: 1560,
+    height: 1040,
+  },
+  {
     src: 'https://lewisdick.com/photography/DSCF1979-1.jpg',
     width: 2946,
     height: 1088,
+  },
+  {
+    src: 'https://lewisdick.com/photography/DSCF2640.jpg',
+    width: 1040,
+    height: 1560,
+  },
+  {
+    src: 'https://lewisdick.com/photography/DSCF2720.jpg',
+    width: 1040,
+    height: 1560,
+  },
+  {
+    src: 'https://lewisdick.com/photography/DSCF1008-4.jpg',
+    width: 1178,
+    height: 1524,
   },
 ]

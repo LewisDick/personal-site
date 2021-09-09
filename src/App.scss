@@ -6,11 +6,11 @@
   width: 100%;
   position: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .wrapper {
-  padding-top: 25vh;
+  padding-top: 23.6vh;
   overflow: auto;
   height: 100%;
   -ms-overflow-style: none; /* IE and Edge */
@@ -22,12 +22,12 @@
 }
 
 .container {
-  float: right;
-  color: white;
+  color: #f2f2f2;
   text-align: left;
-  padding-right: 9rem;
-  width: 453px;
+  width: 61vw;
+  min-width: 453px;
   overflow: hidden;
+  margin-left: 1rem;
 
   ul {
     list-style: none;
@@ -41,19 +41,18 @@
 }
 
 .nav {
-  float: left;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  padding-top: 25vh;
+  padding-top: 26vh;
   text-align: right;
-  width: 8rem;
   color: white;
+  min-width: 7rem;
+
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
     font-weight: 500;
+
     li {
       padding: 0.3rem;
       cursor: pointer;
@@ -66,7 +65,7 @@
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 600px) {
   #technologies {
     max-height: 60px;
     padding-left: 0rem;
@@ -77,6 +76,10 @@
   }
 
   .container {
+    width: auto;
+    margin-left: 0;
+    min-width: auto;
+
     h4 {
       margin-bottom: 0.5rem;
     }
@@ -86,5 +89,35 @@
         padding-left: 0rem;
       }
     }
+  }
+
+  .App {
+    justify-content: center;
+  }
+
+  .wrapper {
+    padding-top: 3rem;
+  }
+
+  .experience {
+    padding: 0.5rem;
+  }
+
+  .nav {
+    position: fixed;
+    padding-top: 0;
+    background-color: black;
+    width: 100%;
+
+    ul {
+      li {
+        float: left;
+        padding: 1rem;
+      }
+    }
+  }
+
+  .photography-wrapper {
+    margin-top: 3rem;
   }
 }

@@ -30,11 +30,10 @@ function App() {
         </ul>
       </div>
       <div className="container">
-        <div className="wrapper">
-          <h1>Lewis Dick</h1>
-          {component === ComponentType.Experience && <Experience />}
+        
+          {component === ComponentType.Experience && <div className="wrapper"><Experience /></div>}
           {component === ComponentType.Photography && <Photography />}
-        </div>
+        
       </div>
     </div>
   )

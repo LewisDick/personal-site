@@ -3,7 +3,8 @@ import React from 'react'
 import './Experience.scss'
 
 export const Experience = () => (
-  <>
+  <div className="experience">
+    <h1>Lewis Dick</h1>
     <h4>Experience</h4>
     <ul id="experience">
       {Object.keys(experience).map((job) => (
@@ -37,5 +38,5 @@ export const Experience = () => (
         </li>
       ))}
     </ul>
-  </>
+  </div>
 )

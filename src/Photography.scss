@@ -1,8 +1,16 @@
 .react-photo-gallery--gallery {
   width: 100%;
-  padding-bottom: 25vh;
+  margin-bottom: 1rem;
 }
 
 .photography-wrapper {
-  height: 100vh;
+  height: 100%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow: auto;
+  padding: 0.5rem;
 }
+
+.photography-wrapper::-webkit-scrollbar {
+    display: none;
+  }

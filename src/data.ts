@@ -17,6 +17,7 @@ export const experience: Record<string, string> = {
 export const socials: Record<string, string> = {
   GitHub: 'https://github.com/LewisDick',
   LinkedIn: 'https://www.linkedin.com/in/lewis-dick/',
+  Resume: 'https://lewisdick.com/files/lewis_dick-resume-sept-2021.pdf'
 }
 
 export const education = [
